@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: service-product
+    cloud:
+        nacos:
+            server-addr: localhost:8848
+    config:
+        import:
+            - optional:nacos:service-product.yml
+server:
+    port: 10033
